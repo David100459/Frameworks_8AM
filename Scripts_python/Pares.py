@@ -1,5 +1,5 @@
 '''
-Developer: Muñoz
+Developer: David Muñoz
 Date: 14 aug 2021
 Descripcion: Scrypt Python que permita identificar el mayor de dos
 Números ingresados por consola 
