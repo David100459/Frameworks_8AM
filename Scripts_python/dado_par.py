@@ -20,7 +20,7 @@ def dices() :
             status = False
             print("::: Los dados son pares. El lanzamiento ha finalizado :::")
         else :
-            key = input(".:: Presiona cualquier tecla para lanzar los dados nuevamente ...")    
+            key = input(".:: Presiona cualquier tecla para lanzar los dados nuevamente ...")   
 
 #Main
 dices()
