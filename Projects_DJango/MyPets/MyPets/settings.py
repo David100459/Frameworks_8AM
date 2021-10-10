@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-hmwrqfwr=2s9us=wi3$5@7q47uizt6jnay_j1b8ps9os*)q#wf'
+SECRET_KEY = 'django-insecure-ea4vpxoaejc1m=@go8r6e9!hr^r7!x7uv838(b)_s#y**59%^k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tienda_mascotas.apps.TiendaMascotasConfig',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +75,15 @@ WSGI_APPLICATION = 'MyPets.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mypets',
+        'USER': 'postgres',
+        'PASSWORD': 'monodoc401',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    },
+    'test': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
